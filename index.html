@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chuck95 Winamp</title>
+  <script src="https://unpkg.com/webamp"></script>
+  <style>
+    body {
+      margin: 0;
+      background: #1c1c1c;
+      font-family: sans-serif;
+    }
+    #winamp-container {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 9999;
+    }
+  </style>
+</head>
+<body>
+  <div id="winamp-container"></div>
+
+  <script>
+    const webamp = new Webamp({
+      initialTracks: [
+        {
+          metaData: { artist: "Billy Ocean", title: "Caribbean Queen" },
+          url: "Billy_Ocean_Caribbean_Queen_No_More_Love_on_the_Run_Extended_Mix.mp3",
+        },
+        {
+          metaData: { artist: "Bryan Adams", title: "Run To You" },
+          url: "Bryan Adams - Run To You (Flash FM).mp3",
+        },
+        {
+          metaData: { artist: "Dire Straits", title: "Money For Nothing" },
+          url: "Dire Straits - Money For Nothing (Radio Edit).mp3",
+        },
+        {
+          metaData: { artist: "Foreigner", title: "Waiting for a Girl Like You" },
+          url: "Foreigner_Waiting_for_a_Girl_Like_You_Original_1981_LP_Version_HQ.mp3",
+        },
+        {
+          metaData: { artist: "George Michael", title: "Careless Whisper" },
+          url: "George Michael - Careless Whisper.mp3",
+        },
+        {
+          metaData: { artist: "Jan Hammer", title: "Crockett's Theme" },
+          url: "Jan Hammer - Crockett's Theme Flac.mp3",
+        },
+        {
+          metaData: { artist: "Jimi Jamison", title: "I'm Always Here" },
+          url: "Jimi Jamison - I'm Always Here (Lyrics).mp3",
+        },
+        {
+          metaData: { artist: "Modern Talking", title: "Cheri Cheri Lady" },
+          url: "Modern Talking - Cheri Cheri Lady [HQ - FLAC].mp3",
+        },
+        {
+          metaData: { artist: "Mr. Mister", title: "Broken Wings" },
+          url: "Mr. Mister - Broken Wings (Original 1985 LP Version) HQ.mp3",
+        },
+        {
+          metaData: { artist: "Hall & Oates", title: "Out of Touch" },
+          url: "Out of Touch.mp3",
+        },
+        {
+          metaData: { artist: "Pet Shop Boys", title: "Domino Dancing" },
+          url: "PET_SHOP_BOYS_Domino_Dancing_1988_FLAC_Audio_HQ_7fgL6nGrlP0.mp3",
+        },
+        {
+          metaData: { artist: "Pink Floyd", title: "Another Brick in the Wall" },
+          url: "Pink Floyd - Another brick in the wall.mp3",
+        },
+        {
+          metaData: { artist: "Paul Engemann", title: "Push It To The Limit" },
+          url: "Push It To The Limit - Paul Engemann (Scarface, 1983).mp3",
+        },
+        {
+          metaData: { artist: "Silent Circle", title: "Stop the Rain in the Night" },
+          url: "Silent_Circle_Stop_The_Rain_In_The_Night_ExclUsive_Bootleg`2021.mp3",
+        },
+        {
+          metaData: { artist: "The Whispers", title: "And The Beat Goes On" },
+          url: "The Whispers - And The Beat Goes On (1979).mp3",
+        },
+        {
+          metaData: { artist: "Billy Idol", title: "White Wedding (Pt. 1)" },
+          url: "White Wedding (Pt. 1  Remastered 2002).mp3",
+        },
+        {
+          metaData: { artist: "Rod Stewart", title: "Young Turks" },
+          url: "Young Turks.mp3",
+        }
+      ]
+    });
+
+    webamp.renderWhenReady(document.getElementById("winamp-container"));
+  </script>
+</body>
+</html>
